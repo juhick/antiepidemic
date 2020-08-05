@@ -14,7 +14,7 @@
     	<div class="mianb">
     		<div class="mblf layui-col-xs6 layui-col-md6">
     			 <i class="layui-icon">&#xe656;</i>
-    			 <p>首页管理 > <span>轮播图</span></p>
+    			 <p>首页管理 > <span>防控信息</span></p>
     		</div>
     		<div class="mbrt layui-col-xs6 layui-col-md6">
     			<a href="javascript:;" class="layui-btn layui-btn-normal" id="addbanner">增加</a>    			     			 
@@ -28,7 +28,7 @@
 						  <thead>
 						    <tr>
 						      <th width="15%">排序</th>
-						      <th>图片预览</th>
+						      <th>信息内容</th>
 						      <th>显示</th>						     
 						      <th>操作</th>
 						    </tr> 
@@ -103,7 +103,7 @@
           var layer = layui.layer;
           layer.open({
                 type: 2,
-                title: '添加轮播图',
+                title: '添加防控信息',
                 fix: false,
                 shadeClose: true,
                 shade: 0.8,
@@ -118,7 +118,7 @@
 		
 		//判断弹框
 		$(".delete").click(function(){
-			layer.confirm('确定要删除此图片？', {
+			layer.confirm('确定要删除该条信息么？', {
 			  btn: ['是','否'] //按钮
 			}, function(){
 			  layer.msg('已删除', {icon: 1});
